@@ -33,7 +33,7 @@ class cLogin {
         if ($vencedor == $player2) $_SESSION['player2_score'] = $_SESSION['player2_score']+1; 
 
             
-        $pdo = require $_SERVER['DOCUMENT_ROOT'].'/jogo-da-velha-2/pdo/connection.php';
+        $pdo = require $_SERVER['DOCUMENT_ROOT'].'/jogo-da-velha/pdo/connection.php';
         $sql = "insert into partida (player1, player2, vencedor) values (?,?,?)";
         $Statement = $pdo->prepare($sql);
 //            $Statement->execute([$nome,$email,$pass]);
