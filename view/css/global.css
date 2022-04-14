@@ -1,0 +1,134 @@
+html{
+    font-size: 16px;
+}
+
+/* --------- Body ---------- */
+body{
+    width: 100vw;
+}
+.container{
+    background-color: lightcyan;
+    width: 100%;
+    min-height: 100vh;
+}
+/* --------- Body ---------- */
+
+/* --------- Header ---------- */
+header {
+    position: relative;
+	background-color: midnightblue;
+	display: grid;
+	grid-template-columns: 6fr 3fr;
+	height: 100px;
+}
+.header_element{
+    margin: 10px;
+}
+.player_name{
+    color: white;
+    font-size: 1.4rem;
+}
+/* --------- Header ---------- */
+
+/* --------- Centralize ---------- */
+.center_block {
+    position: absolute;
+	display: block;
+	inset: 0;
+	margin: auto;
+}
+.items_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+/* --------- Centralize ---------- */
+
+/* --------- Form ---------- */
+.form_simple{
+    background-color: #FEFEFE;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 10px 0;
+}
+.form_sizing{
+    width: 400px;
+    height: 300px;
+}
+.input_textfield{
+    width: 200px;
+    height: 25px;
+}
+.form_item{
+    margin: 10px;
+}
+/* --------- Form ---------- */
+
+
+/* --------- Text ---------- */
+.big_title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.simple_title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* --------- Text ---------- */
+
+/* --------- Buttons ---------- */
+.simple_button{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 5px 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* --------- Buttons ---------- */
+
+/* --------- Game table ---------- */
+.div_table{
+    position: relative;
+    width: 425px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+}
+.table_row{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+}
+.table_quad{
+    position: relative;
+    width: 33.3%;
+    height: 100%;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0;
+}
+.game_point{
+    font-size: 130px;
+}
+
+#game::before{
+    content: attr(data-content);
+    color: red;
+    font-size: 1.4rem;
+}
+/* --------- Game table ---------- */
